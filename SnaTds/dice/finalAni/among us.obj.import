@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/among us.obj-407d6bc6da0a5ab5afaaf0bcec951e3f.mesh"
+
+[deps]
+
+files=[ "res://.import/among us.obj-407d6bc6da0a5ab5afaaf0bcec951e3f.mesh" ]
+
+source_file="res://dice/finalAni/among us.obj"
+dest_files=[ "res://.import/among us.obj-407d6bc6da0a5ab5afaaf0bcec951e3f.mesh", "res://.import/among us.obj-407d6bc6da0a5ab5afaaf0bcec951e3f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
