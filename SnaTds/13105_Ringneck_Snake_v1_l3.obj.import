@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/13105_Ringneck_Snake_v1_l3.obj-47c5f562453b3223dc3a8d9993fbabf0.mesh"
+
+[deps]
+
+files=[ "res://.import/13105_Ringneck_Snake_v1_l3.obj-47c5f562453b3223dc3a8d9993fbabf0.mesh" ]
+
+source_file="res://13105_Ringneck_Snake_v1_l3.obj"
+dest_files=[ "res://.import/13105_Ringneck_Snake_v1_l3.obj-47c5f562453b3223dc3a8d9993fbabf0.mesh", "res://.import/13105_Ringneck_Snake_v1_l3.obj-47c5f562453b3223dc3a8d9993fbabf0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

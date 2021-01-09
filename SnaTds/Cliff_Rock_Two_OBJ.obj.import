@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Rock_Two_OBJ.obj-8c8be8f0fafe91e7054402c649f7871d.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Rock_Two_OBJ.obj-8c8be8f0fafe91e7054402c649f7871d.mesh" ]
+
+source_file="res://Cliff_Rock_Two_OBJ.obj"
+dest_files=[ "res://.import/Cliff_Rock_Two_OBJ.obj-8c8be8f0fafe91e7054402c649f7871d.mesh", "res://.import/Cliff_Rock_Two_OBJ.obj-8c8be8f0fafe91e7054402c649f7871d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

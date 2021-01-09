@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/10330_Wooden Cutting Board_v2_max2010_it2.obj-582901bea41d0fb7edcbce998752eecb.mesh"
+
+[deps]
+
+files=[ "res://.import/10330_Wooden Cutting Board_v2_max2010_it2.obj-582901bea41d0fb7edcbce998752eecb.mesh" ]
+
+source_file="res://10330_Wooden Cutting Board_v2_max2010_it2.obj"
+dest_files=[ "res://.import/10330_Wooden Cutting Board_v2_max2010_it2.obj-582901bea41d0fb7edcbce998752eecb.mesh", "res://.import/10330_Wooden Cutting Board_v2_max2010_it2.obj-582901bea41d0fb7edcbce998752eecb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

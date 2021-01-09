@@ -1,0 +1,343 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://TexturesCom_Flames0042_1_S.jpg" type="Texture" id=1]
+[ext_resource path="res://dice/finalAni/finalImg/1.png" type="Texture" id=2]
+[ext_resource path="res://Ladder.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://10330_Wooden Cutting Board_v2_max2010_it2.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://21945_Snake_V1.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://board (1).obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Snatds.gd" type="Script" id=7]
+[ext_resource path="res://dice/finalAni/finalImg/2.png" type="Texture" id=8]
+[ext_resource path="res://dice/finalAni/finalImg/4.png" type="Texture" id=9]
+[ext_resource path="res://dice/finalAni/finalImg/6.png" type="Texture" id=10]
+[ext_resource path="res://dice/finalAni/finalImg/3.png" type="Texture" id=11]
+[ext_resource path="res://dice/finalAni/finalImg/5.png" type="Texture" id=12]
+[ext_resource path="res://dice/finalAni/dice0005.png" type="Texture" id=13]
+[ext_resource path="res://dice/finalAni/dice0003.png" type="Texture" id=14]
+[ext_resource path="res://dice/finalAni/dice0004.png" type="Texture" id=15]
+[ext_resource path="res://dice/finalAni/dice0006.png" type="Texture" id=16]
+[ext_resource path="res://dice/finalAni/dice0001.png" type="Texture" id=17]
+[ext_resource path="res://dice/finalAni/dice0002.png" type="Texture" id=18]
+[ext_resource path="res://dice/finalAni/dice0022.png" type="Texture" id=19]
+[ext_resource path="res://dice/finalAni/dice0013.png" type="Texture" id=20]
+[ext_resource path="res://dice/finalAni/dice0010.png" type="Texture" id=21]
+[ext_resource path="res://dice/finalAni/dice0012.png" type="Texture" id=22]
+[ext_resource path="res://dice/finalAni/dice0015.png" type="Texture" id=23]
+[ext_resource path="res://dice/finalAni/dice0009.png" type="Texture" id=24]
+[ext_resource path="res://dice/finalAni/dice0011.png" type="Texture" id=25]
+[ext_resource path="res://dice/finalAni/dice0007.png" type="Texture" id=26]
+[ext_resource path="res://dice/finalAni/dice0014.png" type="Texture" id=27]
+[ext_resource path="res://dice/finalAni/dice0019.png" type="Texture" id=28]
+[ext_resource path="res://dice/finalAni/dice0018.png" type="Texture" id=29]
+[ext_resource path="res://dice/finalAni/dice0021.png" type="Texture" id=30]
+[ext_resource path="res://dice/finalAni/dice0008.png" type="Texture" id=31]
+[ext_resource path="res://dice/finalAni/dice0016.png" type="Texture" id=32]
+[ext_resource path="res://dice/finalAni/dice0020.png" type="Texture" id=33]
+[ext_resource path="res://dice/finalAni/dice0017.png" type="Texture" id=34]
+[ext_resource path="res://dice/finalAni/dice00028.png" type="Texture" id=35]
+[ext_resource path="res://dice/finalAni/dice0037.png" type="Texture" id=36]
+[ext_resource path="res://dice/finalAni/dice0030.png" type="Texture" id=37]
+[ext_resource path="res://dice/finalAni/dice0027.png" type="Texture" id=38]
+[ext_resource path="res://dice/finalAni/dice0031.png" type="Texture" id=39]
+[ext_resource path="res://dice/finalAni/dice0029.png" type="Texture" id=40]
+[ext_resource path="res://dice/finalAni/dice0038.png" type="Texture" id=41]
+[ext_resource path="res://dice/finalAni/dice0036.png" type="Texture" id=42]
+[ext_resource path="res://dice/finalAni/dice0034.png" type="Texture" id=43]
+[ext_resource path="res://dice/finalAni/dice0033.png" type="Texture" id=44]
+[ext_resource path="res://dice/finalAni/dice0023.png" type="Texture" id=45]
+[ext_resource path="res://dice/finalAni/dice0026.png" type="Texture" id=46]
+[ext_resource path="res://dice/finalAni/dice0035.png" type="Texture" id=47]
+[ext_resource path="res://dice/finalAni/dice0024.png" type="Texture" id=48]
+[ext_resource path="res://dice/finalAni/dice0032.png" type="Texture" id=49]
+[ext_resource path="res://dice/finalAni/dice0025.png" type="Texture" id=50]
+[ext_resource path="res://dice/finalAni/dice0039.png" type="Texture" id=51]
+[ext_resource path="res://dice/finalAni/dice0040.png" type="Texture" id=52]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 26 ), ExtResource( 31 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 45 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 46 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 40 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 47 ), ExtResource( 42 ), ExtResource( 36 ), ExtResource( 41 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "dice roll",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "dice ",
+"speed": 5.0
+} ]
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="Snatds" type="Spatial"]
+script = ExtResource( 7 )
+
+[node name="board (1)" type="MeshInstance" parent="."]
+transform = Transform( 2.56322, 0, 0, 0, 1, 0, 0, 0, 1.87853, 0.0873575, -0.0190296, 2.83057 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 1 )
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+material/55 = null
+material/56 = null
+material/57 = null
+material/58 = null
+material/59 = null
+material/60 = null
+material/61 = null
+material/62 = null
+material/63 = null
+material/64 = null
+material/65 = null
+material/66 = null
+material/67 = null
+material/68 = null
+material/69 = null
+material/70 = null
+material/71 = null
+material/72 = null
+material/73 = null
+material/74 = null
+material/75 = null
+material/76 = null
+material/77 = null
+material/78 = null
+material/79 = null
+material/80 = null
+material/81 = null
+material/82 = null
+material/83 = null
+material/84 = null
+material/85 = null
+material/86 = null
+material/87 = null
+material/88 = null
+material/89 = null
+material/90 = null
+material/91 = null
+material/92 = null
+material/93 = null
+material/94 = null
+material/95 = null
+material/96 = null
+material/97 = null
+material/98 = null
+material/99 = null
+material/100 = null
+material/101 = null
+material/102 = null
+material/103 = null
+material/104 = null
+material/105 = null
+material/106 = null
+material/107 = null
+material/108 = null
+material/109 = null
+material/110 = null
+material/111 = null
+material/112 = null
+material/113 = null
+material/114 = null
+material/115 = null
+material/116 = null
+material/117 = null
+material/118 = null
+material/119 = null
+material/120 = null
+material/121 = null
+material/122 = null
+material/123 = null
+material/124 = null
+material/125 = null
+material/126 = null
+material/127 = null
+material/128 = null
+material/129 = null
+material/130 = null
+material/131 = null
+material/132 = null
+material/133 = null
+material/134 = null
+material/135 = null
+material/136 = null
+material/137 = null
+material/138 = null
+material/139 = null
+material/140 = null
+material/141 = null
+material/142 = null
+material/143 = null
+material/144 = null
+material/145 = null
+material/146 = null
+material/147 = null
+material/148 = null
+material/149 = null
+material/150 = null
+material/151 = null
+material/152 = null
+material/153 = null
+material/154 = null
+material/155 = null
+material/156 = null
+material/157 = null
+material/158 = null
+material/159 = null
+material/160 = null
+material/161 = null
+material/162 = null
+material/163 = null
+material/164 = null
+material/165 = null
+material/166 = null
+material/167 = null
+material/168 = null
+material/169 = null
+material/170 = null
+material/171 = null
+material/172 = null
+material/173 = null
+material/174 = null
+material/175 = null
+material/176 = null
+material/177 = null
+material/178 = null
+material/179 = null
+material/180 = null
+material/181 = null
+material/182 = null
+material/183 = null
+material/184 = null
+material/185 = null
+material/186 = null
+material/187 = null
+material/188 = null
+material/189 = null
+material/190 = null
+material/191 = null
+material/192 = null
+material/193 = null
+material/194 = null
+material/195 = null
+
+[node name="Ladder3" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.300268, 0.0352385, 0.0274292, 0.0998928, 0.0227671, -0.660407, 0.10892, 0.100172, 0.0813393, -6.12249, 1.73777, -5.65438 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="21945_Snake_V1" type="MeshInstance" parent="board (1)"]
+transform = Transform( -0.25077, -0.407561, -0.0114698, 0.0208783, 0.115636, -0.0510238, -0.471147, 0.277613, 0.00487696, -1.31911, 0.783058, -4.46422 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="21945_Snake_V2" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.39654, -0.459214, -0.0100308, -0.0455439, 0.0816022, -0.00927106, -0.887189, -0.323205, -0.0122436, -0.498071, 0.607323, 1.73265 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="21945_Snake_V4" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.0838714, -0.324584, -0.00796303, 0.000236454, -0.000423661, 4.81333e-05, -2.01631, -0.232296, -0.0149274, 4.49398, 0.607322, 0.884351 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="21945_Snake_V3" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.361939, 0.30094, -0.0960987, -0.1419, -0.0683787, -0.991744, -1.50681, 0.589187, 0.318932, -4.82023, 1.6593, 0.318745 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="Ladder" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.192157, -0.0326598, -0.044765, -0.0135907, 0.00446838, -0.61384, 0.204543, 0.135806, 0.0643975, 2.44357, 1.77371, -0.616198 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Ladder4" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.300268, 0.0352385, 0.0274292, 0.0998928, 0.0227671, -0.660407, 0.10892, 0.100172, 0.0813393, -2.19116, 1.73777, -3.0291 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Ladder2" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.267775, -0.0223964, -0.0471963, -0.0147534, 0.00485065, -0.666353, 0.180097, 0.131615, 0.06461, 3.67249, 1.73777, -6.84702 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="10330_Wooden Cutting Board_v2_max2010_it2" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.0611143, 0, 0, 0, 0.018012, 0, 0, 0, 1.64975, 9.24588, 0.219359, -7.77591 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="10330_Wooden Cutting Board_v2_max2010_it3" type="MeshInstance" parent="board (1)"]
+transform = Transform( 0.0611143, 0, 0, 0, 0.018012, 0, 0, 0, 1.56674, 9.24588, 0.219359, -2.78039 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="dice" type="AnimatedSprite3D" parent="board (1)"]
+transform = Transform( -0.0137752, -0.452124, -0.353604, 0.00932337, 0.132062, -0.0211171, 0.418129, 0.0419304, 9.37928, 8.84352, 2.08323, -6.71961 )
+frames = SubResource( 2 )
+animation = "dice "
+
+[node name="Area" type="Area" parent="board (1)/dice"]
+transform = Transform( 13.0827, 92.1825, 0.780021, -1.01615, 0.406848, -0.0497547, -0.578685, -4.11132, 0.0332301, -480.345, 21.7958, 21.9801 )
+
+[node name="Button" type="CollisionShape" parent="board (1)/dice/Area"]
+transform = Transform( 1.1801, 1.23121e-07, -2.31737e-09, -6.21704e-09, 1.8235, 9.60951e-11, -4.05151e-07, 2.99086e-06, 2.59416, 24.5859, -0.561599, -7.36164 )
+shape = SubResource( 3 )
+
+[node name="diceroll" type="AnimatedSprite3D" parent="board (1)"]
+transform = Transform( -0.0111075, -0.364565, -0.285125, 0.00932337, 0.132062, -0.0211171, 0.283511, 0.0284308, 6.3596, 8.84352, 2.08323, -6.71961 )
+frames = SubResource( 2 )
+animation = "dice roll"
+[connection signal="input_event" from="board (1)/dice/Area" to="." method="_on_Area_input_event"]

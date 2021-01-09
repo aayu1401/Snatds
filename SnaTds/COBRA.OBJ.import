@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/COBRA.OBJ-a1a238bcd9a13a560f9bda0305cc44a6.mesh"
+
+[deps]
+
+files=[ "res://.import/COBRA.OBJ-a1a238bcd9a13a560f9bda0305cc44a6.mesh" ]
+
+source_file="res://COBRA.OBJ"
+dest_files=[ "res://.import/COBRA.OBJ-a1a238bcd9a13a560f9bda0305cc44a6.mesh", "res://.import/COBRA.OBJ-a1a238bcd9a13a560f9bda0305cc44a6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

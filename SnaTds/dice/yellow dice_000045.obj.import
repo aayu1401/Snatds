@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/yellow dice_000045.obj-df45f11e16b1b93083a243748a7895de.mesh"
+
+[deps]
+
+files=[ "res://.import/yellow dice_000045.obj-df45f11e16b1b93083a243748a7895de.mesh" ]
+
+source_file="res://dice/yellow dice_000045.obj"
+dest_files=[ "res://.import/yellow dice_000045.obj-df45f11e16b1b93083a243748a7895de.mesh", "res://.import/yellow dice_000045.obj-df45f11e16b1b93083a243748a7895de.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
