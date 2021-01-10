@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Anime_1charcter.obj-d5da1777e3d07770c987843c3a7d3c57.mesh"
+
+[deps]
+
+files=[ "res://.import/Anime_1charcter.obj-d5da1777e3d07770c987843c3a7d3c57.mesh" ]
+
+source_file="res://dice/finalAni/finalImg/Anime_1charcter.obj"
+dest_files=[ "res://.import/Anime_1charcter.obj-d5da1777e3d07770c987843c3a7d3c57.mesh", "res://.import/Anime_1charcter.obj-d5da1777e3d07770c987843c3a7d3c57.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

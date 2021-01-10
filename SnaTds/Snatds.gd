@@ -1,9 +1,9 @@
 extends Spatial
 var turn=0;
 var diceface=0;
-onready var pathplayer=[$"Path/among us",$"Path/among us2"]
-var a=-1
-var b=-1
+onready var pathplayer=[$"Path/among us2",$"Path/among us"]
+var a=0
+var b=0
 func _ready():
 	$board/diceroll3.hide()
 	$board/diceroll1.hide()
@@ -30,13 +30,13 @@ func _on_diceroll3_animation_finished():
 	print(diceface)
 	
 	if turn%2==1:
-		if b==-1 && diceface==0:
+		if b==0 && diceface==0:
 			b+=diceface+1
-			var pathpoint=$Path.get_curve().get_point_position(b)
+			var pathpoint=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathpoint
 		elif b>=0:
 			b+=diceface+1
-			var pathpoint=$Path.get_curve().get_point_position(b)
+			var pathpoint=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathpoint
 			if b==3||b==11||b==34||b==99||b==57||b==14||b==63||b==41:
 				$tds.show()
@@ -55,13 +55,13 @@ func _on_diceroll1_animation_finished():
 	print(a)
 	print(diceface)
 	if turn%2==0:
-		if a==-1 && diceface==0:
+		if a==0 && diceface==0:
 			a+=diceface+1
-			var pathpoint=$Path.get_curve().get_point_position(a)
+			var pathpoint=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathpoint
 		elif a>=0:
 			a+=diceface+1
-			var pathpoint=$Path.get_curve().get_point_position(a)
+			var pathpoint=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathpoint
 			if a==11 || a==34||a==11||a==99||a==57||a==14||a==63||a==41:
 				$tds.show()
@@ -75,39 +75,39 @@ func _on_diceroll1_animation_finished():
 
 func _on_Done_pressed():
 	$tds.hide()
-	if turn%2==0:
+	if turn%2==1:
 		if a==3:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=44
-			var pathchange=$Path.get_curve().get_point_position(a)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(a-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif a==11:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=49
-			var pathchange=$Path.get_curve().get_point_position(a)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(a-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif a==57:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=96
-			var pathchange=$Path.get_curve().get_point_position(a)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(a-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif a==34:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=66
-			var pathchange=$Path.get_curve().get_point_position(a)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(a-1)
+			pathplayer[1-turn%2].translation=pathchange
 		else:
 			pass
 	else:
@@ -117,32 +117,32 @@ func _on_Done_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=44
-			var pathchange=$Path.get_curve().get_point_position(b)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(b-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif b==11:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=49
-			var pathchange=$Path.get_curve().get_point_position(b)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(b-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif b==57:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=96
-			var pathchange=$Path.get_curve().get_point_position(b)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(b-1)
+			pathplayer[1-turn%2].translation=pathchange
 		elif b==34:
 			$tds.show()
 			randomize()
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=66
-			var pathchange=$Path.get_curve().get_point_position(b)
-			pathplayer[turn%2].translation=pathchange
+			var pathchange=$Path.get_curve().get_point_position(b-1)
+			pathplayer[1-turn%2].translation=pathchange
 		else:
 			pass
 	   
@@ -156,7 +156,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=34
-			var pathchange=$Path.get_curve().get_point_position(a)
+			var pathchange=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathchange
 		elif a==14:
 			$tds.show()
@@ -164,7 +164,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=8
-			var pathchange=$Path.get_curve().get_point_position(a)
+			var pathchange=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathchange
 		elif a==63:
 			$tds.show()
@@ -172,7 +172,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=16
-			var pathchange=$Path.get_curve().get_point_position(a)
+			var pathchange=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathchange
 		elif a==41:
 			$tds.show()
@@ -180,7 +180,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			a=24
-			var pathchange=$Path.get_curve().get_point_position(a)
+			var pathchange=$Path.get_curve().get_point_position(a-1)
 			pathplayer[turn%2].translation=pathchange
 		else:
 			pass
@@ -191,7 +191,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=34
-			var pathchange=$Path.get_curve().get_point_position(b)
+			var pathchange=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathchange
 		elif b==14:
 			$tds.show()
@@ -199,7 +199,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=8
-			var pathchange=$Path.get_curve().get_point_position(b)
+			var pathchange=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathchange
 		elif b==63:
 			$tds.show()
@@ -207,7 +207,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=16
-			var pathchange=$Path.get_curve().get_point_position(b)
+			var pathchange=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathchange
 		elif b==41:
 			$tds.show()
@@ -215,7 +215,7 @@ func _on_Pass_pressed():
 			var c=randi()%2
 			$tds/popup/truth.set_frame(c)
 			b=24
-			var pathchange=$Path.get_curve().get_point_position(b)
+			var pathchange=$Path.get_curve().get_point_position(b-1)
 			pathplayer[turn%2].translation=pathchange
 		else:
 			pass
