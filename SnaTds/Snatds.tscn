@@ -305,23 +305,18 @@ transform = Transform( 0.300268, 0.0352385, 0.0274292, 0.0998928, 0.0227671, -0.
 mesh = ExtResource( 3 )
 material/0 = null
 
-[node name="21945_Snake_V1" type="MeshInstance" parent="board (1)"]
-transform = Transform( -0.25077, -0.407561, -0.0114698, 0.0208783, 0.115636, -0.0510238, -0.471147, 0.277613, 0.00487696, -1.31911, 0.783058, -4.46422 )
-mesh = ExtResource( 5 )
-material/0 = null
-
 [node name="21945_Snake_V2" type="MeshInstance" parent="board (1)"]
-transform = Transform( 0.39654, -0.459214, -0.0100308, -0.0455439, 0.0816022, -0.00927106, -0.887189, -0.323205, -0.0122436, -0.498071, 0.607323, 1.73265 )
+transform = Transform( -0.594188, -0.293619, -0.0101815, -0.0455439, 0.0816022, -0.00927106, -0.650025, 0.580142, 0.0120098, 4.02696, 0.607323, -1.61524 )
 mesh = ExtResource( 5 )
 material/0 = null
 
 [node name="21945_Snake_V4" type="MeshInstance" parent="board (1)"]
-transform = Transform( 0.0838714, -0.324584, -0.00796303, 0.000236454, -0.000423661, 4.81333e-05, -2.01631, -0.232296, -0.0149274, 4.49398, 0.607322, 0.884351 )
+transform = Transform( -1.12532, -0.332, -0.0135277, -0.0195834, 0.0120061, 0.000279248, -1.31179, 0.211789, -0.000391829, 1.65628, 0.607322, 2.91685 )
 mesh = ExtResource( 5 )
 material/0 = null
 
 [node name="21945_Snake_V3" type="MeshInstance" parent="board (1)"]
-transform = Transform( 0.361939, 0.30094, -0.0960987, -0.1419, -0.0683787, -0.991744, -1.50681, 0.589187, 0.318932, -4.82023, 1.6593, 0.318745 )
+transform = Transform( -0.480642, -0.253574, 0.050227, -0.0255461, -0.0700545, 1.01975, -1.44561, 0.629266, 0.313445, 1.55102, 1.6593, -0.452514 )
 mesh = ExtResource( 5 )
 material/0 = null
 
@@ -344,6 +339,11 @@ material/0 = null
 transform = Transform( 0.0611143, 0, 0, 0, 0.018012, 0, 0, 0, 1.64975, 9.24588, 0.219359, -7.77591 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 2 )
+
+[node name="21945_Snake_V1" type="MeshInstance" parent="board (1)"]
+transform = Transform( -0.195232, -0.317299, -0.00892958, 0.0208783, 0.115636, -0.0510238, -0.297153, 0.175091, 0.00307591, -3.1268, 1.00643, -5.18532 )
+mesh = ExtResource( 5 )
+material/0 = null
 
 [node name="board" type="Sprite" parent="."]
 position = Vector2( 351.713, 363.829 )
@@ -459,3 +459,5 @@ frame = 1
 [connection signal="pressed" from="board/dice2/dice3" to="." method="_on_dice3_pressed"]
 [connection signal="animation_finished" from="board/diceroll3" to="." method="_on_diceroll3_animation_finished"]
 [connection signal="animation_finished" from="board/diceroll1" to="." method="_on_diceroll1_animation_finished"]
+[connection signal="pressed" from="tds/popup/Done" to="." method="_on_Done_pressed"]
+[connection signal="pressed" from="tds/popup/Pass" to="." method="_on_Pass_pressed"]
